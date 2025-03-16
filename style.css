@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  text-align: right;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.input-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-row input {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+.input-row button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.input-row button:hover {
+  background-color: #45a049;
+}
+
+.alert-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.alert-row .crypto-name {
+  flex: 1;
+}
+
+.alert-row .alert-price {
+  flex: 1;
+  text-align: center;
+}
+
+.alert-row .action-buttons {
+  flex: 1;
+  text-align: left;
+}
+
+.alert-row.green {
+  background-color: #d4edda;
+}
+
+.alert-row.red {
+  background-color: #f8d7da;
+}

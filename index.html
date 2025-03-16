@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>هشدار قیمت ارز دیجیتال</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      margin: 20px;
+    }
+    .input-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .input-row input, .input-row button {
+      padding: 8px;
+      margin: 5px;
+      width: 20%;
+    }
+    #alert-container {
+      margin-top: 20px;
+    }
+    .alert-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="input-row">
+      <input type="text" id="crypto-name" placeholder="نام ارز دیجیتال" list="crypto-list" />
+      <input type="text" id="crypto-price" placeholder="قیمت ارز" readonly />
+      <input type="text" id="crypto-change" placeholder="درصد تغییرات روزانه" readonly />
+      <input type="number" id="target-price" placeholder="قیمت هشدار" />
+      <button id="save-alert">ذخیره هشدار</button>
+    </div>
+    <datalist id="crypto-list"></datalist>
+    <div id="alert-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
